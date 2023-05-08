@@ -1,0 +1,30 @@
+
+//sass --watch assets/css/scss/pages/super-craque-messi.min.scss:assets/css/super-craque-messi.min.css
+
+$vitrine-blue: #192C53;
+$vitrine-gray: #747474;
+
+//@import "../_lib/progressive.css";
+
+@import "../components/reset-tray";
+
+@import "../fonts/bebas-neue";
+@import "../fonts/gotham-book";
+@import "../fonts/gotham-medium";
+@import "../fonts/gotham-bold";
+@import "../fonts/gotham-black";
+@import "../fonts/sporty";
+
+
+@import "../components/variables";
+
+@import "super-craque-messi/home";
+@import "super-craque-messi/king";
+@import "super-craque-messi/details";
+@import "super-craque-messi/vitrine";
+@import "super-craque-messi/chronology";
+@import "super-craque-messi/curiosity";
+@import "../fonts/icons-font";
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}
