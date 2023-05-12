@@ -1220,7 +1220,7 @@ p {
 }
 @media (min-width: 1200px) {
   .c-home {
-    background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/bg-desk-pele.png");
+    background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-desk.png");
   }
 }
 .c-home .home-text {
@@ -1289,7 +1289,7 @@ p {
 }
 
 .c-king {
-  background-color: #000;
+  background-color: #E4E4E4;
   padding: 80px 0px;
   overflow: hidden;
 }
@@ -1325,7 +1325,7 @@ p {
   }
 }
 .c-king .king-content {
-  color: #fff;
+  color: #061127;
   font-size: 16px;
   text-align: center;
   margin-bottom: 8px;
@@ -1334,20 +1334,19 @@ p {
 @media (min-width: 1200px) {
   .c-king .king-content {
     font-size: 18px;
-    text-align: start;
+    text-align: justify;
     margin-bottom: 0;
     padding: 0;
-    font-weight: 300;
   }
 }
 .c-king .king-card {
-  width: 100%;
   margin-top: 8px;
   margin-bottom: 8px;
 }
 @media (min-width: 1200px) {
   .c-king .king-card {
     margin: 0;
+    max-height: 550px;
   }
 }
 .c-king .slick__king .item {
@@ -1838,7 +1837,14 @@ p {
 @media (min-width: 1200px) {
   .c-curiosity {
     padding: 80px 0px;
+    background: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-curiosity.png");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
+}
+.c-curiosity .col-content-curiosity {
+  background-color: #C7C7C7;
+  position: relative;
 }
 .c-curiosity .curiosity-box {
   padding: 10px 50px;
@@ -1852,7 +1858,6 @@ p {
   letter-spacing: 5px;
   font-size: 18px;
   text-transform: uppercase;
-  color: #FFA82D;
   font-weight: 600;
   text-align: center;
   padding-bottom: 8px;
@@ -1890,12 +1895,11 @@ p {
   }
 }
 .c-curiosity .slick-curiosity_text .card-curiosity-text {
-  background-color: #FFA82D;
-  padding: 40px;
+  padding: 50px;
 }
 @media (min-width: 1200px) {
   .c-curiosity .slick-curiosity_text .card-curiosity-text {
-    height: 365px;
+    height: 300px;
     display: flex;
     justify-content: center;
   }
@@ -1918,10 +1922,11 @@ p {
   color: #000;
   font-size: 16px;
   text-align: center;
+  font-weight: 500;
 }
 @media (min-width: 1200px) {
   .c-curiosity .slick-curiosity_text .curiosity-card-content {
-    text-align: start;
+    text-align: center;
   }
 }
 .c-curiosity .slick-curiosity_img .img-box {
@@ -1935,21 +1940,26 @@ p {
 }
 .c-curiosity .curiosity-nav {
   position: absolute;
-  left: 42%;
-  bottom: 3%;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%);
 }
 .c-curiosity .curiosity-nav button {
-  background: rgba(0, 0, 0, 0.1);
-  display: flex;
-  border: none;
-  padding: 5px;
-  justify-content: center;
-  margin: 0px 3px;
-  border-radius: 3px;
+  font-size: 0;
+  background: #535353;
+  width: 20px;
+  height: 5px;
+  border-radius: 4px;
+  border: 0;
+  margin: 0 5px;
+  opacity: 0.3;
+  outline: none;
+  transition: all 0.2s ease;
 }
-.c-curiosity .curiosity-nav button i {
-  font-size: 25px;
-  color: rgba(255, 255, 255, 0.5019607843);
+.c-curiosity .curiosity-nav li.slick-active button {
+  opacity: 1;
+  width: 40px;
+  background: #FFA82D;
 }
 .c-curiosity .slick__mob_curiosity .box-text {
   padding: 32px;
@@ -1967,7 +1977,7 @@ p {
 }
 .c-curiosity .slick__mob_curiosity .slick-dots button {
   font-size: 0;
-  background: #262626;
+  background: #535353;
   width: 20px;
   height: 5px;
   border-radius: 4px;
@@ -1980,7 +1990,7 @@ p {
 .c-curiosity .slick__mob_curiosity .slick-dots li.slick-active button {
   opacity: 1;
   width: 40px;
-  background: #808080;
+  background: #FFA82D;
 }
 
 @font-face {
