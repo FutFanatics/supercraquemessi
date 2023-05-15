@@ -2,7 +2,7 @@
     @media (min-width: 1200px) { @content; }
 }
 .c-king{
-    background-color: #E4E4E4;
+    background: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-listras.png');
     padding: 80px 0px;
     overflow: hidden;
 
@@ -63,6 +63,7 @@
         
     }
     .slick__king{
+        position: relative;
         .item{
             display: flex !important;
             justify-content: center;
@@ -73,21 +74,23 @@
             .circle-pele{
                 width: 40px;
                 height: 40px;
-                background-color: #FFA82D;
+                background-color: #040F25;
                 border-radius: 100%;
                 display: flex;
                 justify-content: center;
                 align-items:center ;
                 transition: ease 0.8s ;
+                z-index: 99;
 
                 @include md{
-                    background-color: #0F0F0F;
+                    background-color: #040F25;
                 }
 
                 &-number{
                     font-family: 'bebas neue';
                     font-size: 20px;
                     font-weight: 700;
+                    color: #092E43;
 
                 }
             }
@@ -96,17 +99,35 @@
                 padding: 32px;
                 min-height: 400px;
                 border-radius: 10px;
-                background: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/bg-card-king.png');
+                background-color:#040F25 ;
                 background-size: cover;
                 background-repeat: no-repeat;
-                border:1px solid #FFA82D;
                 cursor: pointer;
-                transition: 0.8s ease-in-out;
-
+                position: relative;
+                transition: 1s ease-in-out;
+                
+                
+                &::before{
+                    position: absolute;
+                    width: 45px;
+                    height: 100%;
+                    background:linear-gradient(180deg, #082D42 0%, rgba(8, 45, 66, 0) 100%); 
+                    content: '';
+                    top: 0;
+                    right: 30px;
+                    
+                }
                 @include md{
                     border: 1px solid #0F0F0F;
-                    min-height: 350px;
-                    padding: 16px;                    
+                    padding: 24px 32px;                  
+                }
+
+                &:hover{
+                    background-color:#020B1C;
+
+                    &::before{
+                        background: linear-gradient(180deg, #3681A9 0%, rgba(60, 153, 203, 0) 100%);
+                    }
                 }
 
                 .king{
@@ -150,6 +171,9 @@
                         padding-top: 16px;
                         transition: 0.8s ease-in-out;
                         font-weight: 300;
+                        z-index: 999;
+                        position: relative;
+                        font-weight: 400;
 
                         @include md{
                             color: #363636;
@@ -171,10 +195,10 @@
                         color: #FFFFFF;
                     }
                     .circle-pele{
-                        background-color: #FFA82D;
+                        background-color: #020B1C;
                     }
                     .circle-pele-number{
-                        color: #0F0F0F;
+                        color: #FFFFFF;
                     }
                 }
             }
@@ -208,11 +232,25 @@
                 }
             }
         }
+
+        @include md{
+            &::before{
+                background:linear-gradient(270deg, #E4E4E4 0%, rgba(228, 228, 228, 0) 100%) ;
+                position: absolute;
+                width: 20vh;
+                height: 100%;
+                content: "";
+                top: 0px;
+                z-index: 99;
+                right: 15%;
+            }
+        }
+
     }
     .slick-nav_king{
         margin-bottom: 8px;
             button{ 
-                background: transparent;
+                background: #0000001A;
                 border: none;
                 i{
                     font-size: 25px;

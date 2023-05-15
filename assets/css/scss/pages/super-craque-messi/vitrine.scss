@@ -4,7 +4,8 @@
 }
 
 .c-vitrine{
-    background-color:#000 ;
+    background:url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-listras.png');
+    background-size: contain;
     padding: 80px 0px;
 
     .vitrine{
@@ -31,12 +32,13 @@
             }
 
             .discount{
+                font-family: 'gotham';
                 position: absolute;
                 right: 20px;
                 top: 5px;
-                background-color:#FFA82D ;
+                background-color:#347DA3;
                 font-weight: 800;
-                color: #000;
+                color: #FFF;
                 font-size: 12px;
                 border-radius: 20px;
                 padding: 3px 7px;
@@ -52,6 +54,7 @@
                 margin-top: 8px;
                 flex-direction: column;
                 display: flex;
+                font-family: 'gotham';
 
                 @include md{
                     flex-direction: row;
@@ -62,7 +65,8 @@
                     color: #000;
                     min-height: 25px;
                     max-width: 110px;
-                    background-color: #535353;
+                    background-color: transparent;
+                    border: 1px #000000 solid;
                     font-size: 12px;
                     border-radius: 20px;
                     display: flex;
@@ -75,7 +79,7 @@
                     }
 
                     @include md{
-                        padding: 3px 10px;
+                        padding: 2px 8px;
                         margin-right: 8px;
                         margin-bottom: 0px;
                     }
@@ -83,10 +87,10 @@
                 .oferta{
                     text-transform: uppercase;
                     font-weight: 700;
-                    color: #000;
+                    color: #FFF;
                     min-height: 25px;
                     max-width: 80px;
-                    background-color: #FFA82D;
+                    background-color: #347DA3;
                     font-size: 12px;
                     border-radius: 20px;
                     justify-content: center;
@@ -102,12 +106,14 @@
                 }
             }
             .title{
-                font-size: 16px;
+                font-size: 14px;
                 color: #747474;
                 font-weight: 400;
                 margin-top: 8px;
+                font-family: 'gotham';
             }
             .price{
+                font-family: 'gotham';
                 .old-price{
                     text-decoration: line-through;
                     font-weight: 500;

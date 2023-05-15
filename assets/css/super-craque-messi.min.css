@@ -1210,7 +1210,7 @@ p {
 }
 
 .c-home {
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/bg-mob-pele.png");
+  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-home-mob.png");
   min-height: 100vh;
   position: relative;
   justify-content: center;
@@ -1289,7 +1289,7 @@ p {
 }
 
 .c-king {
-  background-color: #E4E4E4;
+  background: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-listras.png");
   padding: 80px 0px;
   overflow: hidden;
 }
@@ -1349,6 +1349,9 @@ p {
     max-height: 550px;
   }
 }
+.c-king .slick__king {
+  position: relative;
+}
 .c-king .slick__king .item {
   display: flex !important;
   justify-content: center;
@@ -1361,41 +1364,57 @@ p {
 .c-king .slick__king .item .circle-pele {
   width: 40px;
   height: 40px;
-  background-color: #FFA82D;
+  background-color: #040F25;
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: ease 0.8s;
+  z-index: 99;
 }
 @media (min-width: 1200px) {
   .c-king .slick__king .item .circle-pele {
-    background-color: #0F0F0F;
+    background-color: #040F25;
   }
 }
 .c-king .slick__king .item .circle-pele-number {
   font-family: "bebas neue";
   font-size: 20px;
   font-weight: 700;
+  color: #092E43;
 }
 .c-king .slick__king .item .king-card {
   width: 350px;
   padding: 32px;
   min-height: 400px;
   border-radius: 10px;
-  background: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/bg-card-king.png");
+  background-color: #040F25;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 1px solid #FFA82D;
   cursor: pointer;
-  transition: 0.8s ease-in-out;
+  position: relative;
+  transition: 1s ease-in-out;
+}
+.c-king .slick__king .item .king-card::before {
+  position: absolute;
+  width: 45px;
+  height: 100%;
+  background: linear-gradient(180deg, #082D42 0%, rgba(8, 45, 66, 0) 100%);
+  content: "";
+  top: 0;
+  right: 30px;
 }
 @media (min-width: 1200px) {
   .c-king .slick__king .item .king-card {
     border: 1px solid #0F0F0F;
-    min-height: 350px;
-    padding: 16px;
+    padding: 24px 32px;
   }
+}
+.c-king .slick__king .item .king-card:hover {
+  background-color: #020B1C;
+}
+.c-king .slick__king .item .king-card:hover::before {
+  background: linear-gradient(180deg, #3681A9 0%, rgba(60, 153, 203, 0) 100%);
 }
 .c-king .slick__king .item .king-card .king-box-icon {
   height: 45px;
@@ -1441,6 +1460,9 @@ p {
   padding-top: 16px;
   transition: 0.8s ease-in-out;
   font-weight: 300;
+  z-index: 999;
+  position: relative;
+  font-weight: 400;
 }
 @media (min-width: 1200px) {
   .c-king .slick__king .item .king-card .king-box-content {
@@ -1463,10 +1485,10 @@ p {
   color: #FFFFFF;
 }
 .c-king .slick__king .item .king-card:hover .circle-pele {
-  background-color: #FFA82D;
+  background-color: #020B1C;
 }
 .c-king .slick__king .item .king-card:hover .circle-pele-number {
-  color: #0F0F0F;
+  color: #FFFFFF;
 }
 .c-king .slick__king .slick-dots {
   list-style: none;
@@ -1492,11 +1514,23 @@ p {
   width: 40px;
   background: #808080;
 }
+@media (min-width: 1200px) {
+  .c-king .slick__king::before {
+    background: linear-gradient(270deg, #E4E4E4 0%, rgba(228, 228, 228, 0) 100%);
+    position: absolute;
+    width: 20vh;
+    height: 100%;
+    content: "";
+    top: 0px;
+    z-index: 99;
+    right: 15%;
+  }
+}
 .c-king .slick-nav_king {
   margin-bottom: 8px;
 }
 .c-king .slick-nav_king button {
-  background: transparent;
+  background: rgba(0, 0, 0, 0.1019607843);
   border: none;
 }
 .c-king .slick-nav_king button i {
@@ -1573,7 +1607,8 @@ p {
 }
 
 .c-vitrine {
-  background-color: #000;
+  background: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-listras.png");
+  background-size: contain;
   padding: 80px 0px;
 }
 .c-vitrine .vitrine-title {
@@ -1591,12 +1626,13 @@ p {
   text-decoration: none;
 }
 .c-vitrine #vitrine-fut .item .discount {
+  font-family: "gotham";
   position: absolute;
   right: 20px;
   top: 5px;
-  background-color: #FFA82D;
+  background-color: #347DA3;
   font-weight: 800;
-  color: #000;
+  color: #FFF;
   font-size: 12px;
   border-radius: 20px;
   padding: 3px 7px;
@@ -1611,6 +1647,7 @@ p {
   margin-top: 8px;
   flex-direction: column;
   display: flex;
+  font-family: "gotham";
 }
 @media (min-width: 1200px) {
   .c-vitrine #vitrine-fut .item .tags {
@@ -1623,7 +1660,8 @@ p {
   color: #000;
   min-height: 25px;
   max-width: 110px;
-  background-color: #535353;
+  background-color: transparent;
+  border: 1px #000000 solid;
   font-size: 12px;
   border-radius: 20px;
   display: flex;
@@ -1636,7 +1674,7 @@ p {
 }
 @media (min-width: 1200px) {
   .c-vitrine #vitrine-fut .item .tags .lancamento {
-    padding: 3px 10px;
+    padding: 2px 8px;
     margin-right: 8px;
     margin-bottom: 0px;
   }
@@ -1644,10 +1682,10 @@ p {
 .c-vitrine #vitrine-fut .item .tags .oferta {
   text-transform: uppercase;
   font-weight: 700;
-  color: #000;
+  color: #FFF;
   min-height: 25px;
   max-width: 80px;
-  background-color: #FFA82D;
+  background-color: #347DA3;
   font-size: 12px;
   border-radius: 20px;
   justify-content: center;
@@ -1663,10 +1701,14 @@ p {
   }
 }
 .c-vitrine #vitrine-fut .item .title {
-  font-size: 16px;
+  font-size: 14px;
   color: #747474;
   font-weight: 400;
   margin-top: 8px;
+  font-family: "gotham";
+}
+.c-vitrine #vitrine-fut .item .price {
+  font-family: "gotham";
 }
 .c-vitrine #vitrine-fut .item .price .old-price {
   text-decoration: line-through;
@@ -1733,100 +1775,7 @@ p {
 }
 @media (min-width: 1200px) {
   .c-chronology {
-    background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/bg_cronology.png");
-  }
-}
-.c-chronology .box-chronology {
-  padding: 100px 10px 0px 10px;
-  align-items: center;
-  position: relative;
-  margin-bottom: 42px;
-}
-@media (min-width: 1200px) {
-  .c-chronology .box-chronology {
-    margin-bottom: 0px;
-    padding: 100px 0px 0px 0px;
-  }
-}
-.c-chronology .box-chronology:last-child {
-  margin-bottom: 0px;
-}
-.c-chronology .chronology-img {
-  width: 100%;
-}
-@media (min-width: 1200px) {
-  .c-chronology .chronology-img {
-    width: 100%;
-    min-height: 250px;
-  }
-}
-.c-chronology .chronology-time {
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  top: 20px;
-  border-radius: 100%;
-  left: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #FFF;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-@media (min-width: 1200px) {
-  .c-chronology .chronology-time {
-    width: 200px;
-    height: 200px;
-    z-index: 1;
-  }
-}
-.c-chronology .chronology-time span {
-  font-size: 50px;
-  font-weight: 500;
-  color: #FFF;
-  font-family: "bebas neue";
-}
-@media (min-width: 1200px) {
-  .c-chronology .chronology-time span {
-    font-size: 80px;
-    font-weight: 700;
-  }
-}
-.c-chronology .chronology-title {
-  color: #FFF;
-  font-size: 40px;
-  font-weight: 500;
-  font-family: "bebas neue";
-  text-align: center;
-  padding-top: 42px;
-}
-@media (min-width: 1200px) {
-  .c-chronology .chronology-title {
-    padding-top: 0px;
-    text-align: start;
-    font-size: 50px;
-  }
-}
-.c-chronology .chronology-title br {
-  display: none;
-}
-@media (min-width: 1200px) {
-  .c-chronology .chronology-title br {
-    display: block;
-  }
-}
-.c-chronology .chronology-content {
-  color: #FFF;
-  font-size: 16px;
-  font-weight: 300;
-  padding-top: 32px;
-  text-align: center;
-}
-@media (min-width: 1200px) {
-  .c-chronology .chronology-content {
-    padding-top: 0px;
-    text-align: start;
+    background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-timeline.png");
   }
 }
 
