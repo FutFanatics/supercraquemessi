@@ -11,6 +11,75 @@
     @include md{
         background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-timeline.png');
     }
+    .chronology{
+        &-img{
+            width: 100%;
+            z-index: 1;
+            position: relative;
+            
+            &_2008{
+                position: relative;
+                left: 60px;
+                width: 115%;
+                z-index: 0;
+            }
+            &_2009{
+                width: 350px;
+            }
+        }
+        .img-left{
+            margin-bottom: 16px;
+        }
+        &-text{
+            font-weight: 600;
+            color: #000;
+            text-align: justify;
+            font-size: 18px;
 
+            &_2008{
+                padding-left: 25%;
+            }
+            &_2011{
+                text-align: center;
+            }
+        }
+        &-traco{
+            position: absolute;
+            left: 100px;
+            top: 120px;
+            height: 250px;
+
+            &_left{
+                height: 300px;
+                top: 0px;
+                left: 200px;
+                z-index: 0;
+            }
+        }
+        &-seta{
+            position: absolute;
+            left: 100px;
+            top: -20px;
+            height: 120px;
+
+            &_2{
+                left: 100px;
+                top: 160px;
+            }
+        }
+        &-hat_trick{
+            position: absolute;
+            left: 80px;
+            top: 100px;
+            height: 80px;
+        }
+
+        &-trophy{
+            position: absolute;
+            right: -100px;
+            top: 50px;
+            height: 130px;
+        }
+    }
 
 }
