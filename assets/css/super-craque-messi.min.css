@@ -1767,15 +1767,16 @@ p {
 }
 
 .c-chronology {
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/mob-cronology.png");
+  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/chronology/bg-mob-chronology.png");
   min-height: 100vh;
-  padding: 100px 0px;
+  padding: 100px 20px;
   background-size: cover;
   background-position: center;
 }
 @media (min-width: 1200px) {
   .c-chronology {
     background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-timeline.png");
+    padding: 100px 0px;
   }
 }
 .c-chronology .chronology-img {
@@ -1807,14 +1808,18 @@ p {
   text-align: justify;
   font-size: 18px;
 }
-.c-chronology .chronology-text_2008 {
-  padding-left: 25%;
+@media (min-width: 1200px) {
+  .c-chronology .chronology-text_2008 {
+    padding-left: 25%;
+  }
 }
 .c-chronology .chronology-text_2011 {
   text-align: center;
 }
-.c-chronology .chronology-text_2009 {
-  padding-right: 32px;
+@media (min-width: 1200px) {
+  .c-chronology .chronology-text_2009 {
+    padding-right: 32px;
+  }
 }
 .c-chronology .chronology-traco {
   position: absolute;
