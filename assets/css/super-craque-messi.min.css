@@ -1792,6 +1792,12 @@ p {
 .c-chronology .chronology-img_2009 {
   width: 350px;
 }
+.c-chronology .chronology-img_2015 {
+  width: 600px;
+}
+.c-chronology .chronology-img_2022 {
+  margin-bottom: 32px;
+}
 .c-chronology .chronology .img-left {
   margin-bottom: 16px;
 }
@@ -1807,6 +1813,9 @@ p {
 .c-chronology .chronology-text_2011 {
   text-align: center;
 }
+.c-chronology .chronology-text_2009 {
+  padding-right: 32px;
+}
 .c-chronology .chronology-traco {
   position: absolute;
   left: 100px;
@@ -1821,25 +1830,31 @@ p {
 }
 .c-chronology .chronology-seta {
   position: absolute;
-  left: 100px;
-  top: -20px;
+  left: 15%;
+  top: -5%;
   height: 120px;
 }
 .c-chronology .chronology-seta_2 {
-  left: 100px;
-  top: 160px;
+  left: 15%;
+  top: 85%;
 }
 .c-chronology .chronology-hat_trick {
   position: absolute;
-  left: 80px;
-  top: 100px;
+  left: 10%;
+  top: 55%;
   height: 80px;
 }
 .c-chronology .chronology-trophy {
   position: absolute;
-  right: -100px;
+  right: -10%;
   top: 50px;
   height: 130px;
+}
+.c-chronology .chronology-game {
+  position: absolute;
+  width: 200px;
+  left: 75%;
+  bottom: -45%;
 }
 
 .c-curiosity {

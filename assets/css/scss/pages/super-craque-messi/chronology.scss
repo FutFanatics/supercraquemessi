@@ -26,6 +26,12 @@
             &_2009{
                 width: 350px;
             }
+            &_2015{
+                width: 600px;
+            }
+            &_2022{
+                margin-bottom: 32px;
+            }
         }
         .img-left{
             margin-bottom: 16px;
@@ -41,6 +47,9 @@
             }
             &_2011{
                 text-align: center;
+            }
+            &_2009{
+                padding-right: 32px;
             }
         }
         &-traco{
@@ -58,27 +67,34 @@
         }
         &-seta{
             position: absolute;
-            left: 100px;
-            top: -20px;
+            left: 15%;
+            top: -5%;
             height: 120px;
 
             &_2{
-                left: 100px;
-                top: 160px;
+                left: 15%;
+                top: 85%;
             }
         }
         &-hat_trick{
             position: absolute;
-            left: 80px;
-            top: 100px;
+            left: 10%;
+            top: 55%;
             height: 80px;
         }
 
         &-trophy{
             position: absolute;
-            right: -100px;
+            right: -10%;
             top: 50px;
             height: 130px;
+        }
+
+        &-game{
+            position: absolute;
+            width: 200px;
+            left: 75%;
+            bottom: -45%;
         }
     }
 
