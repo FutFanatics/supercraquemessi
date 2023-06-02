@@ -9,7 +9,7 @@
     background-position: center;
 
     @include md{
-        background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-timeline.png');
+        background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-cronologia.png');
         padding: 100px 0px;
     }
     .chronology{
@@ -24,11 +24,19 @@
                 width: 115%;
                 z-index: 0;
             }
+            &_2008mob{
+                width: 350px;
+                object-fit: cover;
+            }
             &_2009{
                 width: 350px;
             }
             &_2015{
                 width: 600px;
+            }
+            &_2015mob{
+                width: 350px;
+                object-fit: cover;
             }
             &_2022{
                 margin-bottom: 32px;
@@ -52,6 +60,7 @@
                 text-align: center;
             }
             &_2009{
+                padding-top: 16px;
                 @include md{
                     padding-right: 32px;
                 }

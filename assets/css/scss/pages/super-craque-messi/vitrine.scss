@@ -4,14 +4,14 @@
 }
 
 .c-vitrine{
-    background:url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-goat_messi.png');
-    background-size: contain;
+    background:url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-listras.png');
     padding: 80px 0px;
-    background-size: cover;
-    background-position: center bottom;
-    bottom: -20px;
+
+    @include md{
+        padding: 60px 0px;
+    }
     
-    
+
     .vitrine{
         &-title{
             font-size: 20px;

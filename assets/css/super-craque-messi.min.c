@@ -1608,12 +1608,8 @@ p {
 
 .c-vitrine {
   background: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-listras.png");
+  background-size: contain;
   padding: 80px 0px;
-}
-@media (min-width: 1200px) {
-  .c-vitrine {
-    padding: 60px 0px;
-  }
 }
 .c-vitrine .vitrine-title {
   font-size: 20px;
@@ -1771,115 +1767,21 @@ p {
 }
 
 .c-chronology {
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/chronology/bg-mob-chronology.png");
+  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquepele/mob-cronology.png");
   min-height: 100vh;
-  padding: 100px 20px;
+  padding: 100px 0px;
   background-size: cover;
   background-position: center;
 }
 @media (min-width: 1200px) {
   .c-chronology {
-    background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-cronologia.png");
-    padding: 100px 0px;
+    background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-timeline.png");
   }
-}
-.c-chronology .chronology-img {
-  width: 100%;
-  z-index: 1;
-  position: relative;
-}
-.c-chronology .chronology-img_2008 {
-  position: relative;
-  left: 60px;
-  width: 115%;
-  z-index: 0;
-}
-.c-chronology .chronology-img_2008mob {
-  width: 350px;
-  object-fit: cover;
-}
-.c-chronology .chronology-img_2009 {
-  width: 350px;
-}
-.c-chronology .chronology-img_2015 {
-  width: 600px;
-}
-.c-chronology .chronology-img_2015mob {
-  width: 350px;
-  object-fit: cover;
-}
-.c-chronology .chronology-img_2022 {
-  margin-bottom: 32px;
-}
-.c-chronology .chronology .img-left {
-  margin-bottom: 16px;
-}
-.c-chronology .chronology-text {
-  font-weight: 600;
-  color: #000;
-  text-align: justify;
-  font-size: 18px;
-}
-@media (min-width: 1200px) {
-  .c-chronology .chronology-text_2008 {
-    padding-left: 25%;
-  }
-}
-.c-chronology .chronology-text_2011 {
-  text-align: center;
-}
-.c-chronology .chronology-text_2009 {
-  padding-top: 16px;
-}
-@media (min-width: 1200px) {
-  .c-chronology .chronology-text_2009 {
-    padding-right: 32px;
-  }
-}
-.c-chronology .chronology-traco {
-  position: absolute;
-  left: 100px;
-  top: 120px;
-  height: 250px;
-}
-.c-chronology .chronology-traco_left {
-  height: 300px;
-  top: 0px;
-  left: 200px;
-  z-index: 0;
-}
-.c-chronology .chronology-seta {
-  position: absolute;
-  left: 15%;
-  top: -5%;
-  height: 120px;
-}
-.c-chronology .chronology-seta_2 {
-  left: 15%;
-  top: 85%;
-}
-.c-chronology .chronology-hat_trick {
-  position: absolute;
-  left: 10%;
-  top: 55%;
-  height: 80px;
-}
-.c-chronology .chronology-trophy {
-  position: absolute;
-  right: -10%;
-  top: 50px;
-  height: 130px;
-}
-.c-chronology .chronology-game {
-  position: absolute;
-  width: 200px;
-  left: 75%;
-  bottom: -45%;
 }
 
 .c-curiosity {
-  padding: 40px 0px 0px 0px;
-  background-color: #C7C7C7;
+  padding: 40px 0px;
+  background-color: #000;
 }
 @media (min-width: 1200px) {
   .c-curiosity {
@@ -1909,12 +1811,6 @@ p {
   text-align: center;
   padding-bottom: 8px;
 }
-.c-curiosity .curiosity-toptitle_mob {
-  color: #347DA3;
-  font-size: 16px;
-  padding-bottom: 0px;
-  font-weight: 700;
-}
 @media (min-width: 1200px) {
   .c-curiosity .curiosity-toptitle {
     padding-bottom: 0;
@@ -1939,12 +1835,6 @@ p {
     padding-bottom: 0px;
   }
 }
-.c-curiosity .curiosity-title_mob {
-  color: #000;
-  padding-bottom: 0;
-  font-size: 90px;
-  line-height: 3.5rem;
-}
 .c-curiosity .curiosity-title br {
   display: none;
 }
@@ -1952,33 +1842,6 @@ p {
   .c-curiosity .curiosity-title br {
     display: block;
   }
-}
-.c-curiosity .slick-curiosity_text .slick-dots {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 40%;
-}
-.c-curiosity .slick-curiosity_text .slick-dots button {
-  font-size: 0;
-  background: #717171;
-  width: 20px;
-  height: 6px;
-  border-radius: 4px;
-  border: 0;
-  margin: 0 5px;
-  opacity: 0.3;
-  outline: none;
-  transition: all 0.2s ease;
-}
-.c-curiosity .slick-curiosity_text .slick-dots li.slick-active button {
-  opacity: 1;
-  width: 40px;
-  background: #000000;
 }
 .c-curiosity .slick-curiosity_text .card-curiosity-text {
   padding: 50px;
@@ -2015,32 +1878,13 @@ p {
     text-align: center;
   }
 }
-.c-curiosity .slick-curiosity_text_mob .card-curiosity-text {
-  padding: 0px 20px 20px 20px;
-}
-.c-curiosity .slick-curiosity_text_mob .slick-dots {
-  top: 95%;
-}
-.c-curiosity .slick-curiosity_text_mob .slick-dots button {
-  background: #717171;
-}
-.c-curiosity .slick-curiosity_text_mob .slick-dots li.slick-active button {
-  background: #347DA3;
-}
-.c-curiosity .slick-curiosity_text_mob .col-img_curiosity {
-  background-color: #000;
-  height: 350px;
-}
-.c-curiosity .col-img_curiosity {
-  padding: 30px;
-}
-.c-curiosity .box-img .img-box {
+.c-curiosity .slick-curiosity_img .img-box {
   width: 100%;
+  max-height: 700px;
 }
 @media (min-width: 1200px) {
-  .c-curiosity .box-img .img-box {
+  .c-curiosity .slick-curiosity_img .img-box {
     border-radius: 10px 10px 10px 0px;
-    max-height: 560px;
   }
 }
 .c-curiosity .curiosity-nav {
@@ -2547,4 +2391,4 @@ p {
   content: "\e95e";
 }
 
-/*# sourceMappingURL=super-craque-messi.min.css.map */
+/*# sourceMappingURL=super-craque-messi.min.c.map */

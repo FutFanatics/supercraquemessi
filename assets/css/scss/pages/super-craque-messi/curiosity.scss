@@ -4,20 +4,24 @@
 }
 
 .c-curiosity{
-    padding: 40px 0px;
-    background-color: #000;
-    top: -20px;
-    position: relative;
+    padding: 40px 0px 0px 0px;
+    background-color: #C7C7C7;
 
     @include md{
         padding: 80px 0px;
         background: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-curiosity.png');
         background-size: cover;
         background-repeat: no-repeat;
+        
     }
+
+
+
     .col-content-curiosity{
         background-color: #C7C7C7;
         position: relative;
+
+        
     }
     .curiosity{
         &-box{
@@ -33,6 +37,14 @@
             font-weight: 600;
             text-align: center;
             padding-bottom: 8px;
+
+            &_mob{
+                color: #347DA3;
+                font-size: 16px;
+                padding-bottom: 0px;
+                font-weight: 700;
+                
+            }
             
             @include md{
                 padding-bottom: 0;
@@ -54,6 +66,13 @@
                 text-align: start;
                 font-size: 85px;
                 padding-bottom: 0px;
+            }
+
+            &_mob{
+                color: #000;
+                padding-bottom: 0;
+                font-size: 90px;
+                line-height: 3.5rem;
             }
             br{
                 display:  none;
@@ -130,15 +149,43 @@
             }
         }
         
+        &_mob{
+            
+            .card-curiosity-text{
+                padding:0px 20px 20px 20px;
+            }
+            .slick-dots{
+                top: 95%;
+                button {
+                    background: #717171 ;
+                }
+
+                li.slick-active {
+                    button {
+                        background:#347DA3;
+                    }
+                }
+            }
+            .col-img_curiosity{
+                background-color: #000;
+                height: 350px;
+            }
+        }
     }
     
-    .slick-curiosity_img{
+    .col-img_curiosity{
+        padding: 30px;
+
+
+    }
+    .box-img{
         .img-box{
             width: 100%;
-            max-height: 560px;
+            
 
             @include md{
                 border-radius: 10px 10px 10px 0px;
+                max-height: 560px;
             }
         }
     }
