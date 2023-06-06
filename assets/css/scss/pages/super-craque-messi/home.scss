@@ -11,7 +11,7 @@ $gray-darker: #1F1F1F;
 $white: #D7D7D7;
 
 header{
-        color: #000000;
+        color: #040F25;
     .logo{
         color: #939393;
     }
@@ -19,10 +19,10 @@ header{
         color: $white;
     }
     .header-top{
-        background-color: #000000;
+        background-color: #040F25;
 
         .header-infos{
-            background-color: #000000;
+            background-color: #040F25;
             
             
             .link-inter{
@@ -32,17 +32,17 @@ header{
                 &:hover{
                     a{
                         background-color:#939393 ;
-                        color: #000000;
+                        color: #040F25;
                     }
                     .icon-link-inter{
-                        color: #000000;
+                        color: #040F25;
                     }
                 }
             }
         }
         .header-nav{
-            background-color: #000000;
-            border: 1px solid #939393;
+            background-color: #040F25;
+            border: 1px solid #040F25;
             border-left: none;
             border-right: none;
             nav{
@@ -56,7 +56,7 @@ header{
                             }
                         }
                         .child-container{
-                            background-color: #000000;
+                            background-color: #040F25;
                             ul{
                                 li{
                                     .menu-title{
@@ -69,7 +69,7 @@ header{
                                 .menu-links{
                                     a{
                                         background-color: #939393;
-                                        color: #000000;
+                                        color: #040F25;
 
                                         &:hover{
                                             background-color: #FFFFFF;
@@ -93,7 +93,7 @@ header{
         }
         .central{
             .menu-central{
-                background-color: #000000;
+                background-color: #040F25;
                 a{
                     color: #939393;
                 }
@@ -117,7 +117,7 @@ header{
 				
 			}
             .menu-cart{
-                background-color: #000000;
+                background-color: #040F25;
                 border: 1px solid #939393;
 
                 .cart-products{
@@ -135,7 +135,7 @@ header{
                 }
                 a{
                     background-color: #939393;
-                    color: #000000;
+                    color: #040F25;
                 }
             }
         }
@@ -147,14 +147,14 @@ header{
 		.header-nav {
 			nav {
 				.nav-top {
-					background: $black;
+					background: #040F25;
 					color: $white;
 					i {
 						color: $white;
 					}
 				}
 				ul {
-					background: #1F1F1F;
+					background: #040F25;
 
 					li {
 						border-color: $gray-light;
@@ -197,25 +197,6 @@ header{
 						}
 					}
 				}
-			}
-		}
-	}
-
-	footer {
-		background: black;
-		color: $gray-light;
-		border-top: 1px solid $gray;
-		.footer-menus {
-			h3[data-toggle="collapse"] {
-				border-color: $gray-light;
-
-				i {
-					color: $gray;
-				}
-			}
-
-			ul {
-				border-color: $black;
 			}
 		}
 	}

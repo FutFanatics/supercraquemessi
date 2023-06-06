@@ -5,7 +5,7 @@
 
 .c-vitrine{
     background:url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-listras.png');
-    padding: 80px 0px;
+    padding: 40px 0px 80px 0px ;
 
     @include md{
         padding: 60px 0px;
@@ -122,15 +122,15 @@
                     text-decoration: line-through;
                     font-weight: 500;
                     font-size: 12px;
-                    color: #747474;
+                    color: #535353;
                 }
                 .current-price{
                     font-size: 16px;
                     font-weight: 800;
-                    color: #747474;
+                    color: #535353;
                 }
                 .installments{
-                    color: #747474;
+                    color: #535353;
                     font-size: 14px;
                     margin-top: 2px;
                 }
@@ -160,14 +160,14 @@
                 button {
                     opacity: 1;
                     width: 40px;
-                    background:#FFA82D;
+                    background:#347DA3;
                 }
             }
         }
     }
     .slick-nav_vitrine{
-        padding: 0px 6%;
-        top: 40%;
+        padding: 0px 15%;
+        top: 55%;
         position: absolute;
         width: 100%;
         .slick-prev, .slick-next{

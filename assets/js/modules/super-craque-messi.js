@@ -120,7 +120,7 @@
 					template.find('.title').html(title);
 
 					if (percentDiscount < 100) {
-						template.find('.foto .discount').html('▾ ' + percentDiscount.toFixed() + '%').removeClass('d-none');
+						template.find('.foto .discount').html('<i class="icon-arrow-down-fill"></i>' + percentDiscount.toFixed() + '%').removeClass('d-none');
 					}
 
 					// lozad('.lozad', {
@@ -368,31 +368,6 @@
 
 
 
-	containerhistory.slick({
-		autoplay: false,
-		autoplaySpeed: 4000,
-		pauseOnFocus: false,
-		pauseOnHover: false,
-		arrows: true,
-		dots: false,
-		adaptiveHeight: true,
-		prevArrow: $('.slick-nav_historia').find('.slick-prev'),
-        nextArrow: $('.slick-nav_historia').find('.slick-next'),
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		responsive: [{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-
-						}
-			
-			}]
-	}).on('afterChange', function(event, slick, currentSlide, nextSlide){
-		var current = currentSlide + 1;
-		$('.slick-nav_historia').find('.slick-numbers .current').html(current < 10 ? "0" + current : current)}
-);
 	
     function multiSlideAdaptiveHeight(slider) {
 

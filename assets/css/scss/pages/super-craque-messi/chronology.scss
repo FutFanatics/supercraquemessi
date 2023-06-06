@@ -1,12 +1,27 @@
 @mixin md{
     @media (min-width: 1200px) { @content; }
 }
+
+.box-testeira{
+    .line{
+        top:-25px;
+
+        &_mob{
+            height: 50px;
+            object-fit: cover;
+        }
+    }
+    &_bottom{
+        transform: rotate(180deg);
+    }
+}
 .c-chronology{
-    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/chronology/bg-mob-chronology.png');
+    background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-cronologia.png');
     min-height: 100vh;
     padding: 100px 20px;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 
     @include md{
         background-image: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/supercraquemessi/bg-cronologia.png');
@@ -29,17 +44,33 @@
                 object-fit: cover;
             }
             &_2009{
-                width: 350px;
+                width: 400px;
+                margin-bottom: 16px;
+                margin-top: 32px;
+            }
+            &_2011mob{
+                display: block;
+                object-fit: cover;
+                width: 550px;
+
+                @include md{
+                    display: none;
+                }
             }
             &_2015{
                 width: 600px;
             }
             &_2015mob{
-                width: 350px;
+                width: 400px;
                 object-fit: cover;
             }
             &_2022{
                 margin-bottom: 32px;
+
+                &_mob{
+                    width: 400px;
+                    object-fit: cover;
+                }
             }
         }
         .img-left{
@@ -58,12 +89,25 @@
             }
             &_2011{
                 text-align: center;
+                &_mob{
+                    width: 300px;
+                    margin-bottom: 16px;
+                    display: block;
+                    margin-top: -64px;
+
+                    @include md{
+                        display: none;
+                    }
+                }    
             }
             &_2009{
                 padding-top: 16px;
                 @include md{
                     padding-right: 32px;
                 }
+            }
+            &_2015mob{
+                margin-bottom: 16px;
             }
         }
         &-traco{
@@ -108,6 +152,7 @@
             position: absolute;
             width: 200px;
             left: 75%;
+            z-index: 999;
             bottom: -45%;
         }
     }

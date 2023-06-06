@@ -4,7 +4,7 @@
 }
 
 .c-curiosity{
-    padding: 40px 0px 0px 0px;
+    padding: 80px 0px 0px 0px;
     background-color: #C7C7C7;
 
     @include md{
@@ -21,6 +21,10 @@
         background-color: #C7C7C7;
         position: relative;
 
+
+        @include md{
+            height: 530px;
+        }
         
     }
     .curiosity{
@@ -91,7 +95,13 @@
             justify-content: center;
             position: absolute;
             top: 50%;
-            left: 40%;
+            left: 30%;
+
+            @include md{
+                left: 50%;
+                top: 75%;
+                transform: translate(-50%);
+            }
     
             button {
                 font-size: 0;
@@ -122,6 +132,7 @@
                     height: 300px;
                     display: flex;
                     justify-content: center;
+                    padding-top:20px;
                 }
             }
         }
@@ -168,15 +179,17 @@
             }
             .col-img_curiosity{
                 background-color: #000;
-                height: 350px;
             }
         }
     }
     
     .col-img_curiosity{
-        padding: 30px;
+        padding: 50px 30px;
+        background-color: #000;
 
-
+        @include md{
+            height: 530px;
+        }
     }
     .box-img{
         .img-box{
@@ -185,7 +198,8 @@
 
             @include md{
                 border-radius: 10px 10px 10px 0px;
-                max-height: 560px;
+                max-height: 430px;
+                object-fit: contain;
             }
         }
     }
